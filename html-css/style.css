@@ -9,17 +9,21 @@
 
 html {
   width: 1440;
+  height: 100vh;
 }
 
 .body {
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr;
+    grid-template: 70px 25% 50px 50px 35% 12% 1fr/ 1fr;
+    height: 100%;
   }
  
 
 .nav-container {
   background-color: hsl(0, 0%, 100%);
   grid-area: 1 / 1 / 2 / 2;
+  background-color: aqua;
+  /* height: 40px; */
 }
 
 .header-container {
