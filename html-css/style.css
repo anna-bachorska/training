@@ -10,50 +10,79 @@
 html {
   width: 1440;
   height: 100vh;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .body {
+    max-width: 900px;
+    margin: 0 auto;
     display: grid;
-    grid-template: 70px 25% 50px 50px 35% 12% 1fr/ 1fr;
+    grid-template: 70px 25% 50px 50px 35% 12% 1fr/10% 1fr 10%;
     height: 100%;
+    
+    /* width: 900px;
+    margin: 0 auto; */
   }
  
 
 .nav-container {
   background-color: hsl(0, 0%, 100%);
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 2 / 2 / 3;
   background-color: aqua;
   /* height: 40px; */
 }
 
 .header-container {
   background-color: hsl(0, 0%, 100%);
-  grid-area: 2 / 1 / 4 / 2;
+  grid-area: 2 / 2 / 4 / 4;
+  display: flex;
 }
 
 .form-container {
   background-color: hsl(257, 27%, 26%);
   background-image: url(images/bg-boost-desktop.svg);
   background-size: cover;
-  grid-area: 3 / 1 / 5 / 2;
-  margin: 0 50px;
-  z-index: 6;
+  grid-area: 3 / 2 / 5 / 3;
+  /* margin: 0 50px; */
+  z-index: 8;
 
 }
 
 .main-container {
   background-color: hsl(0, 0%, 75%);
-  grid-area: 4 / 1 / 6 / 2;
+  grid-area: 4 / 2 / 6 / 3;
+  /* z-index: 5 */
   }
 
+  .gray-container {
+    background-color: hsl(0, 0%, 75%);
+    grid-area: 4 / 1 / 6 / 4;
+    z-index: -1;
+  }
+
+  .dark-violet-container {
+    background-color: hsl(260, 8%, 14%);
+    grid-area: 7 / 1 / 8 / 4;
+    z-index: -1;
+  }
+
+  .white-container {
+        background-color: hsl(0, 0%, 100%);
+        grid-area: 1 / 1 / 4 / 4;
+        z-index: -1;
+  }
 .button-start-container {
   background-color: hsl(257, 27%, 26%);
   background-image: url(images/bg-boost-desktop.svg);
   background-size: cover;
-  grid-area: 6 / 1 / 7 / 2;
+  grid-area: 6 / 1 / 7 / 4;
 }
 
 .footer-container {
   background-color: hsl(260, 8%, 14%);
-  grid-area: 7 / 1 / 8 / 2;
+  grid-area: 7 / 2 / 8 / 3;
+}
+
+.illustrtion{
+    object-fit: cover;
 }
