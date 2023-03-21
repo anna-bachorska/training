@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* padding: 0 100px;
+     margin: 0;
+      */
+}
+
+html {
+  width: 1440;
+}
+
+.nav-container {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.header-container {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.form-container {
+  background-color: hsl(257, 27%, 26%);
+  background-image: url(images/bg-boost-desktop.svg);
+  background-size: cover;
+  margin: 0 50px;
+  z-index: 6;
+}
+
+.main-container {
+  background-color: hsl(0, 0%, 75%);
+  }
+
+.button-start-container {
+  background-color: hsl(257, 27%, 26%);
+  background-image: url(images/bg-boost-desktop.svg);
+  background-size: cover;
+}
+
+.footer-container {
+  background-color: hsl(260, 8%, 14%);
+}
