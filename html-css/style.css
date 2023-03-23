@@ -70,6 +70,10 @@ html {
 .footer-container {
   background-color: hsl(260, 8%, 14%);
   grid-area: 7 / 2 / 8 / 3;
+  display: flex;
+  justify-content: flex-end;
+  margin: 25px 0;
+  font-size: 0.6rem;
 }
 
 .grayich-violet-container {
@@ -227,21 +231,7 @@ line-height: 1.1;
           font-size: 1.5rem;
           margin-bottom: 8px;
           }
-
-          .footer-container {
-            display: flex;
-            justify-content: flex-end;
-            /* align-items: center; */
-            /* justify-content: space-between; */
-            margin: 25px 0;
-            font-size: 0.6rem;
-          }
-
-          
-          /* .logo-footer-container {
-            width: 20px;
-          } */
-
+        
           .logo-footer-container {
             margin-right:auto;
           }
@@ -249,7 +239,6 @@ line-height: 1.1;
           .logo-footer {
             fill: hsl(0, 0%, 100%) !important; /*nie działa*/
             width: 80px;
-            /* margin-right:auto; */
           }
 
           .contens-footer {
