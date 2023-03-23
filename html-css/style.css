@@ -75,7 +75,7 @@ html {
   grid-area: 7 / 2 / 8 / 3;
   display: flex;
   justify-content: flex-end;
-  margin: 25px 0;
+  margin: 35px 0 auto;
   font-size: 0.6rem;
 }
 
@@ -277,6 +277,7 @@ line-height: 1.1;
 .contens-footer p:first-child {
   font-weight: 700;
   padding-bottom: 12px;
+  color: hsl(0, 0%, 100%);
 }
 
 .contens-footer a{
@@ -285,11 +286,16 @@ line-height: 1.1;
   line-height: 1.8;
 }
 
+.social-media-aside {
+  width: 30px;
+  padding: 0 5px;
+}
+
 .contens-footer a:hover {
   color: hsl(180, 66%, 49%);
 }
 
-.social-media-aside {
-  width: 30px;
-  padding: 0 5px;
+.submit-hover:hover {
+  background-color: hsl(180, 42%, 67%);
+  border-color: hsl(180, 42%, 67%);
 }
