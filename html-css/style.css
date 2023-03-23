@@ -61,6 +61,10 @@ html {
   background-image: url(images/bg-boost-desktop.svg);
   background-size: cover;
   grid-area: 6 / 1 / 7 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-container {
@@ -217,14 +221,7 @@ line-height: 1.1;
           top: 130px;
         }  
 
-        .submit-get-started-container{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .submit-get-started-container h2 {
+          .submit-get-started-container h2 {
           font-weight: 700;
           color: hsl(0, 0%, 100%);
           font-size: 1.5rem;
@@ -233,17 +230,48 @@ line-height: 1.1;
 
           .footer-container {
             display: flex;
+            justify-content: flex-end;
             /* align-items: center; */
-            justify-content: space-between;
-            margin: 30px 0;
+            /* justify-content: space-between; */
+            margin: 25px 0;
             font-size: 0.6rem;
           }
 
-          .aside-container {
-            display: flex;
+          
+          /* .logo-footer-container {
+            width: 20px;
+          } */
+
+          .logo-footer-container {
+            margin-right:auto;
           }
 
-          logo-footer {
+          .logo-footer {
             fill: hsl(0, 0%, 100%) !important; /*nie działa*/
-            object-fit: contain;
+            width: 80px;
+            /* margin-right:auto; */
           }
+
+          .contens-footer {
+            margin-right: 55px;
+          }
+
+          .contens-footer p:first-child {
+            font-weight: 700;
+            padding-bottom: 12px;
+          }
+
+       .contens-footer a{
+          color: hsl(257, 7%, 63%);
+          text-decoration: none;
+          line-height: 1.8;
+        }
+
+        .contens-footer a:hover {
+          color: hsl(180, 66%, 49%);
+        }
+
+        .social-media-aside {
+          width: 30px;
+          padding: 0 5px;
+        }
