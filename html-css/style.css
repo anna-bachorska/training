@@ -25,6 +25,8 @@ html {
   background-color: hsl(0, 0%, 100%);
   grid-area: 1 / 2 / 2 / 3;
   background-color: aqua;
+  display: flex;
+  align-items: flex-end;
 }
 
 .header-container {
@@ -93,6 +95,12 @@ html {
   grid-area: 1 / 1 / 4 / 4;
   z-index: -1;
 }
+
+
+.logo-nav {
+  width: 80px;
+}
+
 
 .text-header {
     grid-area: 1 / 1 / 2 / 2;
@@ -165,8 +173,7 @@ line-height: 1.1;
   background-color: hsl(0, 0%, 100%);
   padding: 40px 20px 20px;
   border-radius: 8px;
-  
-        }
+  }
 
 .main-icon-card {
   width: 50px;
@@ -192,9 +199,9 @@ line-height: 1.1;
     }
     
 .main-container p {
-        color:hsl(257, 7%, 63%);
-        font-size: 0.6rem;
-        }
+  color:hsl(257, 7%, 63%);
+  font-size: 0.6rem;
+}
 
 
 .main-card h3 {
@@ -207,60 +214,60 @@ line-height: 1.1;
   color:hsl(257, 7%, 63%);
 }
 
-        .card-1 {
-          grid-area: 1 / 1 / 2 / 2;
-          position: relative;
-          top: 70px;
-        }
+.card-1 {
+  grid-area: 1 / 1 / 2 / 2;
+  position: relative;
+  top: 70px;
+}
         
-        .card-2 {
-          grid-area: 1 / 2 / 2 / 3;
-          position: relative;
-          top: 100px;
-        }
+.card-2 {
+  grid-area: 1 / 2 / 2 / 3;
+  position: relative;
+  top: 100px;
+}
         
-        .card-3 {
-          grid-area: 1 / 3 / 2 / 4;
-          position: relative;
-          top: 130px;
-        }  
+.card-3 {
+  grid-area: 1 / 3 / 2 / 4;
+  position: relative;
+  top: 130px;
+}  
 
-          .submit-get-started-container h2 {
-          font-weight: 700;
-          color: hsl(0, 0%, 100%);
-          font-size: 1.5rem;
-          margin-bottom: 8px;
-          }
+.submit-get-started-container h2 {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
         
-          .logo-footer-container {
-            margin-right:auto;
-          }
+.logo-footer-container {
+  margin-right:auto;
+}
 
-          .logo-footer {
-            fill: hsl(0, 0%, 100%) !important; /*nie działa*/
-            width: 80px;
-          }
+.logo-footer {
+  fill: hsl(0, 0%, 100%) !important; /*nie działa*/
+  width: 80px;
+}
 
-          .contens-footer {
-            margin-right: 55px;
-          }
+.contens-footer {
+  margin-right: 55px;
+}
 
-          .contens-footer p:first-child {
-            font-weight: 700;
-            padding-bottom: 12px;
-          }
+.contens-footer p:first-child {
+  font-weight: 700;
+  padding-bottom: 12px;
+}
 
-       .contens-footer a{
-          color: hsl(257, 7%, 63%);
-          text-decoration: none;
-          line-height: 1.8;
-        }
+.contens-footer a{
+  color: hsl(257, 7%, 63%);
+  text-decoration: none;
+  line-height: 1.8;
+}
 
-        .contens-footer a:hover {
-          color: hsl(180, 66%, 49%);
-        }
+.contens-footer a:hover {
+  color: hsl(180, 66%, 49%);
+}
 
-        .social-media-aside {
-          width: 30px;
-          padding: 0 5px;
-        }
+.social-media-aside {
+  width: 30px;
+  padding: 0 5px;
+}
