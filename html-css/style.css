@@ -107,10 +107,20 @@ html {
   margin-right: auto;
 }
 
+.submit-login {
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.6rem;
+  background-color: hsl(180, 66%, 49%);
+  border-color: hsl(180, 66%, 49%);
+  color:hsl(0, 0%, 100%);
+  margin-left: 15px;
+}
+
 .nav-container a {
   color: hsl(257, 7%, 63%);
   text-decoration: none;
-  padding: 0 10px;
+  margin: 0 10px;
 }
 
 
