@@ -24,9 +24,10 @@ html {
 .nav-container {
   background-color: hsl(0, 0%, 100%);
   grid-area: 1 / 2 / 2 / 3;
-  background-color: aqua;
   display: flex;
-  align-items: flex-end;
+ justify-content: flex-end;
+ align-items: center;
+ font-size: 0.6rem;
 }
 
 .header-container {
@@ -99,6 +100,17 @@ html {
 
 .logo-nav {
   width: 80px;
+  padding-right: 10px;
+}
+
+.text-linking-nav {
+  margin-right: auto;
+}
+
+.nav-container a {
+  color: hsl(257, 7%, 63%);
+  text-decoration: none;
+  padding: 0 10px;
 }
 
 
