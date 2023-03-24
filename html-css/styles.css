@@ -1,0 +1,50 @@
+:root {
+  --primary-cyan: hsl(180, 66%, 49%);
+  --primary-cyan-light: hsl(180, 55%, 78%);
+  --primary-violet: hsl(257, 27%, 26%);
+  --secondary-red: hsl(0, 87%, 67%);
+  --neutral-light-gray: hsl(0, 10%, 94%);
+  --neutral-gray: hsl(0, 0%, 75%);
+  --neutral-gray-violet: hsl(257, 7%, 63%);
+  --neutral-dark-blue: hsl(255, 11%, 22%);
+  --neutral-dark-violet: hsl(260, 8%, 14%);
+}
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 5rem, 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  overflow-x: visible;
+}
+
+main.img {
+  flex: 0 0 50%;
+  order: 1;
+  height: initial;
+}
