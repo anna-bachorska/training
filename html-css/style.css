@@ -314,3 +314,101 @@ html {
   }
 }
 
+
+
+@media screen and (max-width: 625px) {
+
+  .body {
+    grid-template: 70px 600px 50px 50px 38% 10% 1fr/10% 1fr 10%;
+  }
+  
+  .header-container {
+    background-color: rgb(45, 160, 141);
+    grid-area: 2 / 2 / 3 / 3;
+    grid-template: 315px 1fr / 1fr;
+  }
+  
+
+  .main-container {
+    grid-area: 5 / 2 / 6 / 3;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    margin:0px 0 80px;
+  }
+
+
+  .text-header {
+    grid-area: 2 /1 / 3 / 2;
+    text-align: center;
+    margin: 10px 0px 40px;;
+  }
+  
+  .illustration-header {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-left: 30px
+  }
+  
+
+
+
+  .main-header-container {
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: center;
+    margin:auto;
+    width: auto;
+  }
+
+  .main-cards-container {
+    grid-area: 2 / 1 / 3 / 2;
+    border-bottom: none;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+    column-gap: 0px;
+    row-gap: 50px ;
+  }
+
+  .main-cards-container div:last-child {
+    grid-area: 1 / 1 / 4/ 2;
+    border-right: 3px solid hsl(180, 66%, 49%);;
+  }
+
+  .main-cards-container div:nth-last-child(2) {
+    grid-area: 1 / 2 / 4/ 3;
+    border-left: 3px solid hsl(180, 66%, 49%);;
+  }
+
+  .main-card {
+    padding: 0px 20px 0px;
+    text-align: center;
+    }
+
+  .card-1 {
+    grid-area: 1 / 1 / 2 / 3;
+    top: 0px;   
+  }
+          
+  .card-2 {
+    grid-area: 2 / 1 / 3 / 3;
+    top: 0px;
+  }
+          
+  .card-3 {
+    grid-area: 3 / 1 / 4 / 3;
+    top: 0px;
+  }  
+  
+  .main-icon-card {
+    position: static;
+    margin: 0 auto;
+    position: relative;
+    top: -25px;
+  }
+
+    .main-card h3,
+    .main-card article {
+      position: relative;
+      top: -20px;
+    }
+    
+  
+}
