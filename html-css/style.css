@@ -306,3 +306,11 @@ html {
     grid-template: 1fr / 55% 45%;
      }
 }
+
+@media screen and (max-width: 692px) {
+  .header-container {
+    background-color: rgb(123, 91, 182);
+    grid-template: 1fr / 50% 50%;
+  }
+}
+
