@@ -48,3 +48,23 @@ main.img {
   order: 1;
   height: initial;
 }
+
+.main-heading {
+  flex: 0 0 50%;
+  text-align: left;
+}
+
+.main-heading .title {
+  color: var(--neutral-dark-violet);
+  line-height: 1.3;
+  font-size: 6rem;
+}
+
+.main-heading .text {
+  color: var(--neutral-gray-violet);
+  margin: 1rem 0 3rem 0;
+}
+
+.btn-rounded {
+  border-radius: 4rem;
+}
