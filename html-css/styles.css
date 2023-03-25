@@ -639,4 +639,8 @@ section {
   .statistics-heading {
     width: 40%;
   }
-}
+
+  .footer-content-list h3 {	.nav .logo {
+    margin-bottom: 2rem;	  display: flex;
+  }
+
