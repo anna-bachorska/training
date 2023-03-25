@@ -409,6 +409,29 @@ html {
       position: relative;
       top: -20px;
     }
-    
-  
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+  .body {
+    grid-template: 70px 600px 80px 80px 38% 10% 1fr/10% 1fr 10%;
+  }
+
+  .text-linking-nav,
+  .nav-container p,
+  .nav-container form {
+    display: none;
+  }
+
+  .nav-container {
+    justify-content: flex-start;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
