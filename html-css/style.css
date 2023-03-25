@@ -443,11 +443,16 @@ display: flex;
 @media screen and (max-width: 375px) {
 
   .body {
-    grid-template: 70px 600px 80px 80px 38% 10% 1fr/10% 1fr 10%;
+    grid-template: 70px 550px 80px 80px 38% 10% 1fr/10% 1fr 10%;
   }
 
   .nav-container {
     justify-content: flex-start;
+  }
+
+  .header-container {
+    grid-area: 2 / 2 / 3 / 3;
+    grid-template: 275px 1fr / 1fr;
   }
 
   .form-container {
@@ -459,6 +464,10 @@ display: flex;
   .nav-container p,
   .nav-container form {
     display: none;
+  }
+
+  .text-header {
+    margin: 10px 0 0;
   }
 
   .text-header h1 {
@@ -480,4 +489,5 @@ display: flex;
   .contens-footer {
     margin: 0 0 15px;
   }
+
 }
