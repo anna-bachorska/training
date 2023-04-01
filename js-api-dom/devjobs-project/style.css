@@ -159,6 +159,7 @@ a {
   display: none;
 }
 
+
 @media (max-width: 75em) {
   :root {
     --padding-layout: 0 5%;
