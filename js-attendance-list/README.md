@@ -29,4 +29,4 @@ https://ipcl32yuj4hzjss4l6yek7prt40wopeg.lambda-url.us-east-1.on.aws/
 9. W przypadku wystąpienie błędu pobierania listy obecności powinien pojawić się komunikat w postaci `toast message`
 10. Pisać czytelny kod - podział na funkcje, poprawne nazewnictwo zmiennych, użycie struktur JS, prettier
 
-Za każdy podpunkt można dostać po 1 pkt. Czas na wykonanie zadania do: 
+Za każdy podpunkt można dostać po 1 pkt. Czas na wykonanie zadania do: 19/04/2023
