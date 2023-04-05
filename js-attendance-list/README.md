@@ -2,6 +2,7 @@
 
 Zostaly stworzone dwa API, które bazują tej samej bazie danych. W bazie zostały umieszone podstawowe dane was wszystkich wraz z nickiem do GitHuba. Za pomocą tych danych musicie odznaczyć się na liście obecności przesyłając wasze imie nazwisko oraz wspomniany nick. Gdy to zrobicie, status obecości w bazie zmieni się na true, a wasze imię i nick zostanie zwrócony z wykorzystaniem API do pobrania listy obecnych użytkowników.
 
+Działamy na swoich branch'ach!!
 ### API do odznaczania obecności: 
 
 https://pxia4wkbor5nqoq3yx3njuvfc40qkcfa.lambda-url.us-east-1.on.aws/
