@@ -15,11 +15,10 @@ Wielkość znaków ma znaczenie!
 
 ### API do pobierania listy obecności: 
 
-https://pxia4wkbor5nqoq3yx3njuvfc40qkcfa.lambda-url.us-east-1.on.aws/
-
+https://ipcl32yuj4hzjss4l6yek7prt40wopeg.lambda-url.us-east-1.on.aws/
 
 ## Celem zadania jest:
-1. Stworzyć formularz zawierający 3 inputy (dla imie, nazwisko oraz nick do gitlaba). 
+1. Stworzyć formularz zawierający 3 inputy (dla imie, nazwisko oraz nick do GitHub). 
 2. Każde z tych pól musi zostać zwalidowana na zmianie wartości inputu. Minimalna ilość znaków dla każdego z nich to 3, a maksymalna to 50. Dodatkowo imie i nazwisko muszą zawierać wyłącznie litery.
 3. Stworzyć listę osób, które wpisały się już na liste i wyświelić ich imię oraz nick
 4. Pobrać dane z zewnętrznego API i wyświetlić je w liście z poprzedniego podpunktu (hint użyj metody GET)
