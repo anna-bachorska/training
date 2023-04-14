@@ -6,27 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>attendance-list</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="container">
         <div class="form-box">
-        <form action="" id="form-attendance" class="form-attendance">
+        <form action="" id="formAttendance" name="formAttendance" class="formAttendance" >
             <h2>The attendance</h2>
+            <p id="result"></p>
             <div class="input-box">
-                
-                <input class="" id="firstname" name="firstname" type="text" placeholder="First name">
-                <!-- <div id="firstNameValidationMessage"></div> -->
+                <i class='bx bx-user' src=""></i>
+                <input class="input firstnameInput" id="firstname" name="firstname" type="text" placeholder="First name">
             </div>
             <div class="input-box">
-                               
-                <input class="" id="lastname" name="lastname" type="text" placeholder="Last name">
-                <!-- <div id="lastNameValidationMessage"></div> -->
+                <i class='bx bx-user' src=""></i>      
+                <input class="input lastnameInput" id="lastname" name="lastname" type="text" placeholder="Last name">
             </div>
             <div class="input-box">
-                   
-                <input id="nick" name="nick" type="text" placeholder="Nick">
-                <!-- <div id="nickValidationMessage"></div> -->
+                <i class='bx bxs-user'></i>
+                <input class="input nickInput" id="nick" name="nick" type="text" placeholder="Nick">
             </div>
             <div class="button">
                  <input class="btn" type="submit" value="Confirm">
@@ -35,7 +34,7 @@
         </div>
     </div>
     
-<!-- <script src="script2.js"></script> -->
+<script src="script2.js"></script>
 </body>
 </html>
 
