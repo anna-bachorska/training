@@ -1,41 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>attendance-list</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="form-box">
-        <form action="" id="formAttendance" name="formAttendance" class="formAttendance" >
-            <h2>The attendance</h2>
-            <p id="result"></p>
-            <div class="input-box">
-                <i class='bx bx-user' src=""></i>
-                <input class="input firstnameInput" id="firstname" name="firstname" type="text" placeholder="First name">
-            </div>
-            <div class="input-box">
-                <i class='bx bx-user' src=""></i>      
-                <input class="input lastnameInput" id="lastname" name="lastname" type="text" placeholder="Last name">
-            </div>
-            <div class="input-box">
-                <i class='bx bxs-user'></i>
-                <input class="input nickInput" id="nick" name="nick" type="text" placeholder="Nick">
-            </div>
-            <div class="button">
-                 <input class="btn" type="submit" value="Confirm">
-            </div>
+      <div class="form-box">
+        <form
+          id="formAttendance"
+          name="formAttendance"
+          class="formAttendance"
+        >
+          <h2>Attendance</h2>
+          
+          <div class="input-box">
+            <i class="bx bx-user" src=""></i>
+            <input
+              class="input nameInput"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Name"
+            />
+            <p id="nameValidationMessage"></p>
+          </div>
+          <div class="input-box">
+            <i class="bx bx-user" src=""></i>
+            <input
+              class="input surnameInput"
+              id="surname"
+              name="surname"
+              type="text"
+              placeholder="Surname"
+            />
+            <p id="surnameValidationMessage"></p>
+          </div>
+          <div class="input-box">
+            <i class="bx bxs-user"></i>
+            <input
+              class="input githubInput"
+              id="github"
+              name="github"
+              type="text"
+              placeholder="Github"
+            />
+            <p id="githubValidationMessage"></p>
+          </div>
+          <div class="button">
+            <input
+              class="btn"
+              type="submit"
+              value="Confirm"
+            />
+          </div>
         </form>
-        </div>
+      </div>
+       <div class="attendanceListContainer">   
+       </div>
     </div>
+    <div class="toastBox"></div>
     
-<script src="script2.js"></script>
-</body>
+    <script src="script2.js"></script>
+  </body>
 </html>
-
-

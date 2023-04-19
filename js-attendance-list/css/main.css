@@ -24,8 +24,8 @@
 
   .form-box{
     position: relative;
-    width: 400px;
-    height: 550px;
+    width: 460px;
+    height: 650px;
     border: 2px solid rgba(255,255,255, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(5px);
@@ -43,7 +43,7 @@
   .form-box .input-box{
     position: relative;
     margin: 30px 0;
-    width: 310px;
+    width: 350px;
     border-bottom: 2px solid rgb(255, 255, 255);
   }
 
@@ -60,9 +60,9 @@
     border-top-left-radius: 8px;
   }
 
-  .firstnameInput,
-  .lastnameInput,
-  .nickInput {
+  .nameInput,
+  .surnameInput,
+  .githubInput {
     background: rgb(255, 0, 0, 0.5);
   }
 
@@ -74,7 +74,8 @@
   }
 
   input::placeholder{
-    color:rgb(255, 255, 255)
+    color:rgb(255, 255, 255);
+    font-style: italic;
   }
 
   .btn{
@@ -89,9 +90,106 @@
     cursor: pointer;
    }
 
-   #result{
+   #nameValidationMessage,
+   #surnameValidationMessage,
+   #githubValidationMessage{
     color:rgb(250, 0, 0);
     font-size: 600;
+    position: absolute;
+    /* position: relative;
+    top: 25px; */
+   }
+
+   .attendanceListContainer {
     position: relative;
-    top: 25px;
+    width: 460px;
+    height: 650px;
+    border: 2px solid rgba(255,255,255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    
+
+    }
+
+   .ul {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    padding-bottom: 20px;
+    /* padding-top: 50px; */
+    /* position: relative;
+    top: -120px; */
+    text-align: center;
+    /* padding: 80px auto 20px; */
+   }
+
+   .li {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding:0 10px 0 25px;
+   }
+
+   .toastBox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+   }
+
+   .toast {
+    width: 300px;
+    height: 70px;
+    font-style: 600;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   }
+
+   .toastSuccess {
+    background-color: rgba(46, 158, 70, 0.5);
+    position: relative;
+   }
+
+   .toastSuccess::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(46, 158, 70);;
+    animation: anim 5s linear forwards;
+   }
+
+   .toastFailure {
+    background-color: rgba(197, 25, 25, 0.5);
+    position: relative;
+   }
+
+   .toastFailure::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(197, 25, 25);;
+    animation: anim 5s linear forwards;
+   }
+
+  
+   @keyframes anim {
+    100%{
+        width: 0;
+    }
    }
