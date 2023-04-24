@@ -28,12 +28,13 @@ function Shopping({ items, removeShopping, completeShopping }) {
     <ShoppingStyle key={index}>
       <ShoppingTextStyle
         key={item.id}
-        className={item.isCompleted ? "checkbox-on" : "checkbox-off"}
+        className={item.isCompleted ? "line-through-on" : "line-through-off"}
       >
         {item.name}
       </ShoppingTextStyle>
       <CheckboxStyle
         type="checkbox"
+        checked={item.isCompleted}
         className="edit-checkbox"
         onChange={() => completeShopping(item.id)}
       ></CheckboxStyle>
