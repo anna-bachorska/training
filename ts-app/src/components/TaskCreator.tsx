@@ -8,6 +8,7 @@ export const TaskCreator = ({ createTask }: any) => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     createTask(newTaskName);
+    console.log(newTaskName)
     localStorage.setItem("tasks", newTaskName as any);
     setNewTaskName("");
   };

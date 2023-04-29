@@ -11,6 +11,7 @@ function App() {
 
   function createTask(taskName: any) {
     if (!tasksItems.find((task: any) => task.name === taskName)) {
+      console.log(`to jest taskName: ${taskName}`)
       setTaskItems([...tasksItems as any, { name: taskName, done: false }]);
     } else {
       alert("The task already exist");
