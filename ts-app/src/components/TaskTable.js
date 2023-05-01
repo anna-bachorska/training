@@ -2,6 +2,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { TaskRow } from "./TaskRow";
 export const TaskTable = ({ tasks, toggleTask, showCompleted = false }) => {
     const taskTableRows = (doneValue) => {
+        console.log(tasks)
         return tasks
             .filter((task) => task.done === doneValue)
             .map((task) => (_jsx(TaskRow, { task: task, toggleTask: toggleTask }, task.name)));

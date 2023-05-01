@@ -1,4 +1,11 @@
-export const VisibilityControl = ({setShowCompleted, cleanTasks, isChecked}: any) => {
+export type VisibilityControlType = {
+    setShowCompleted: (value: boolean) => void,
+    cleanTasks: () => void,
+    isChecked: boolean
+  }
+  
+
+export const VisibilityControl = ({setShowCompleted, cleanTasks, isChecked}: VisibilityControlType) => {
     const handleDelete = () => {
         if (window.confirm('Are you sure you want to delete it?')) {
             cleanTasks();

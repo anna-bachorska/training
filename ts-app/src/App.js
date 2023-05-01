@@ -9,8 +9,10 @@ function App() {
     const [tasksItems, setTaskItems] = useState([]);
     const [showCompleted, setShowCompleted] = useState(false);
     function createTask(taskName) {
+        console.log(`to jest taskName: ${taskName}`)
         if (!tasksItems.find((task) => task.name === taskName)) {
             setTaskItems([...tasksItems, { name: taskName, done: false }]);
+            console.log(`to jest task: ${taskName}`)
         }
         else {
             alert("The task already exist");

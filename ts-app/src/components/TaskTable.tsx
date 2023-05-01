@@ -1,10 +1,17 @@
+import { TaskType } from "../App";
 import { TaskRow } from "./TaskRow";
 
-export const TaskTable = ({ tasks, toggleTask, showCompleted = false }: any) => {
-  const taskTableRows = (doneValue: any) => {
+export type TaskTableType = {
+  tasks: TaskType[],
+  toggleTask: (task: TaskType) => void,
+  showCompleted: boolean;
+}
+
+export const TaskTable = ({ tasks, toggleTask, showCompleted = false }: TaskTableType) => {
+  const taskTableRows = (doneValue: boolean) => {
     return tasks
-      .filter((task: any) => task.done === doneValue)
-      .map((task: any) => (
+      .filter((task: TaskType) => task.done === doneValue)
+      .map((task: TaskType) => (
         <TaskRow task={task} key={task.name} toggleTask={toggleTask} />
       ));
   };

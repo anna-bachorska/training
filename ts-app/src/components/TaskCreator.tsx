@@ -2,14 +2,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
-export const TaskCreator = ({ createTask }: any) => {
-  const [newTaskName, setNewTaskName] = useState<unknown>();
+import { TaskType } from "../App";
 
-  const handleSubmit = (e: any) => {
+type CreateTaskType = {
+  createTask: (task: string) => void;
+}
+
+export const TaskCreator = ({ createTask }: CreateTaskType) => {
+  const [newTaskName, setNewTaskName] = useState<string>('');
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => { ///czy tutaj jest dobrze bo tak znalazlam w google??
     e.preventDefault();
     createTask(newTaskName);
     console.log(newTaskName)
-    localStorage.setItem("tasks", newTaskName as any);
+    localStorage.setItem("tasks", newTaskName as string);
     setNewTaskName("");
   };
   return (
@@ -17,7 +23,7 @@ export const TaskCreator = ({ createTask }: any) => {
       <div className='col-9'>
           <input
               type="text"
-              value={newTaskName as any}
+              value={newTaskName as string}
               placeholder="Enter a new task"
               onChange={(e) => setNewTaskName(e.target.value)}
               className='form-control'
